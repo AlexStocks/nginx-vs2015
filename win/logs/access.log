@@ -1,0 +1,8 @@
+127.0.0.1 - - [17/Jul/2014:16:03:58 +0800] "GET /index.html HTTP/1.1" 200 612 "-" "Wget/1.13.4 (cygwin)" "-"
+127.0.0.1 - - [17/Jul/2014:16:04:13 +0800] "GET / HTTP/1.1" 200 612 "-" "Mozilla/5.0 (Windows NT 6.2; WOW64; rv:28.0) Gecko/20100101 Firefox/28.0" "-"
+127.0.0.1 - - [17/Jul/2014:16:04:13 +0800] "GET /favicon.ico HTTP/1.1" 404 168 "-" "Mozilla/5.0 (Windows NT 6.2; WOW64; rv:28.0) Gecko/20100101 Firefox/28.0" "-"
+127.0.0.1 - - [17/Jul/2014:16:04:13 +0800] "GET /favicon.ico HTTP/1.1" 404 168 "-" "Mozilla/5.0 (Windows NT 6.2; WOW64; rv:28.0) Gecko/20100101 Firefox/28.0" "-"
+127.0.0.1 - - [17/Jul/2014:16:04:21 +0800] "GET / HTTP/1.1" 304 0 "-" "Mozilla/5.0 (Windows NT 6.2; WOW64; rv:28.0) Gecko/20100101 Firefox/28.0" "-"
+127.0.0.1 - - [17/Jul/2014:19:08:53 +0800] "GET / HTTP/1.1" 200 612 "-" "Mozilla/5.0 (Windows NT 6.2; WOW64; rv:28.0) Gecko/20100101 Firefox/28.0" "-"
+127.0.0.1 - - [17/Jul/2014:19:08:53 +0800] "GET /favicon.ico HTTP/1.1" 404 168 "-" "Mozilla/5.0 (Windows NT 6.2; WOW64; rv:28.0) Gecko/20100101 Firefox/28.0" "-"
+127.0.0.1 - - [17/Jul/2014:19:08:53 +0800] "GET /favicon.ico HTTP/1.1" 404 168 "-" "Mozilla/5.0 (Windows NT 6.2; WOW64; rv:28.0) Gecko/20100101 Firefox/28.0" "-"

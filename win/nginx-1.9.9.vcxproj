@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\core\nginx.c" />
+    <ClCompile Include="..\src\core\ngx_array.c" />
+    <ClCompile Include="..\src\core\ngx_buf.c" />
+    <ClCompile Include="..\src\core\ngx_conf_file.c" />
+    <ClCompile Include="..\src\core\ngx_connection.c" />
+    <ClCompile Include="..\src\core\ngx_cpuinfo.c" />
+    <ClCompile Include="..\src\core\ngx_crc32.c" />
+    <ClCompile Include="..\src\core\ngx_crypt.c" />
+    <ClCompile Include="..\src\core\ngx_cycle.c" />
+    <ClCompile Include="..\src\core\ngx_file.c" />
+    <ClCompile Include="..\src\core\ngx_hash.c" />
+    <ClCompile Include="..\src\core\ngx_inet.c" />
+    <ClCompile Include="..\src\core\ngx_list.c" />
+    <ClCompile Include="..\src\core\ngx_log.c" />
+    <ClCompile Include="..\src\core\ngx_md5.c" />
+    <ClCompile Include="..\src\core\ngx_murmurhash.c" />
+    <ClCompile Include="..\src\core\ngx_open_file_cache.c" />
+    <ClCompile Include="..\src\core\ngx_output_chain.c" />
+    <ClCompile Include="..\src\core\ngx_palloc.c" />
+    <ClCompile Include="..\src\core\ngx_parse.c" />
+    <ClCompile Include="..\src\core\ngx_proxy_protocol.c" />
+    <ClCompile Include="..\src\core\ngx_queue.c" />
+    <ClCompile Include="..\src\core\ngx_radix_tree.c" />
+    <ClCompile Include="..\src\core\ngx_rbtree.c" />
+    <ClCompile Include="..\src\core\ngx_resolver.c" />
+    <ClCompile Include="..\src\core\ngx_shmtx.c" />
+    <ClCompile Include="..\src\core\ngx_slab.c" />
+    <ClCompile Include="..\src\core\ngx_spinlock.c" />
+    <ClCompile Include="..\src\core\ngx_string.c" />
+    <ClCompile Include="..\src\core\ngx_times.c" />
+    <ClCompile Include="..\src\event\modules\ngx_iocp_module.c" />
+    <ClCompile Include="..\src\event\modules\ngx_win32_select_module.c" />
+    <ClCompile Include="..\src\event\ngx_event.c" />
+    <ClCompile Include="..\src\event\ngx_event_accept.c" />
+    <ClCompile Include="..\src\event\ngx_event_acceptex.c" />
+    <ClCompile Include="..\src\event\ngx_event_busy_lock.c" />
+    <ClCompile Include="..\src\event\ngx_event_connect.c" />
+    <ClCompile Include="..\src\event\ngx_event_mutex.c" />
+    <ClCompile Include="..\src\event\ngx_event_pipe.c" />
+    <ClCompile Include="..\src\event\ngx_event_posted.c" />
+    <ClCompile Include="..\src\event\ngx_event_timer.c" />
+    <ClCompile Include="..\src\http\modules\ngx_http_access_module.c" />
+    <ClCompile Include="..\src\http\modules\ngx_http_addition_filter_module.c" />
+    <ClCompile Include="..\src\http\modules\ngx_http_auth_basic_module.c" />
+    <ClCompile Include="..\src\http\modules\ngx_http_auth_request_module.c" />
+    <ClCompile Include="..\src\http\modules\ngx_http_autoindex_module.c" />
+    <ClCompile Include="..\src\http\modules\ngx_http_browser_module.c" />
+    <ClCompile Include="..\src\http\modules\ngx_http_charset_filter_module.c" />
+    <ClCompile Include="..\src\http\modules\ngx_http_chunked_filter_module.c" />
+    <ClCompile Include="..\src\http\modules\ngx_http_empty_gif_module.c" />
+    <ClCompile Include="..\src\http\modules\ngx_http_fastcgi_module.c" />
+    <ClCompile Include="..\src\http\modules\ngx_http_flv_module.c" />
+    <ClCompile Include="..\src\http\modules\ngx_http_geo_module.c" />
+    <ClCompile Include="..\src\http\modules\ngx_http_headers_filter_module.c" />
+    <ClCompile Include="..\src\http\modules\ngx_http_index_module.c" />
+    <ClCompile Include="..\src\http\modules\ngx_http_limit_conn_module.c" />
+    <ClCompile Include="..\src\http\modules\ngx_http_limit_req_module.c" />
+    <ClCompile Include="..\src\http\modules\ngx_http_log_module.c" />
+    <ClCompile Include="..\src\http\modules\ngx_http_map_module.c" />
+    <ClCompile Include="..\src\http\modules\ngx_http_memcached_module.c" />
+    <ClCompile Include="..\src\http\modules\ngx_http_mp4_module.c" />
+    <ClCompile Include="..\src\http\modules\ngx_http_not_modified_filter_module.c" />
+    <ClCompile Include="..\src\http\modules\ngx_http_proxy_module.c" />
+    <ClCompile Include="..\src\http\modules\ngx_http_random_index_module.c" />
+    <ClCompile Include="..\src\http\modules\ngx_http_range_filter_module.c" />
+    <ClCompile Include="..\src\http\modules\ngx_http_referer_module.c" />
+    <ClCompile Include="..\src\http\modules\ngx_http_scgi_module.c" />
+    <ClCompile Include="..\src\http\modules\ngx_http_secure_link_module.c" />
+    <ClCompile Include="..\src\http\modules\ngx_http_split_clients_module.c" />
+    <ClCompile Include="..\src\http\modules\ngx_http_ssi_filter_module.c" />
+    <ClCompile Include="..\src\http\modules\ngx_http_static_module.c" />
+    <ClCompile Include="..\src\http\modules\ngx_http_sub_filter_module.c" />
+    <ClCompile Include="..\src\http\modules\ngx_http_upstream_ip_hash_module.c" />
+    <ClCompile Include="..\src\http\modules\ngx_http_upstream_keepalive_module.c" />
+    <ClCompile Include="..\src\http\modules\ngx_http_upstream_least_conn_module.c" />
+    <ClCompile Include="..\src\http\modules\ngx_http_userid_filter_module.c" />
+    <ClCompile Include="..\src\http\modules\ngx_http_uwsgi_module.c" />
+    <ClCompile Include="..\src\http\ngx_http.c" />
+    <ClCompile Include="..\src\http\ngx_http_busy_lock.c" />
+    <ClCompile Include="..\src\http\ngx_http_copy_filter_module.c" />
+    <ClCompile Include="..\src\http\ngx_http_core_module.c" />
+    <ClCompile Include="..\src\http\ngx_http_file_cache.c" />
+    <ClCompile Include="..\src\http\ngx_http_header_filter_module.c" />
+    <ClCompile Include="..\src\http\ngx_http_parse.c" />
+    <ClCompile Include="..\src\http\ngx_http_parse_time.c" />
+    <ClCompile Include="..\src\http\ngx_http_postpone_filter_module.c" />
+    <ClCompile Include="..\src\http\ngx_http_request.c" />
+    <ClCompile Include="..\src\http\ngx_http_request_body.c" />
+    <ClCompile Include="..\src\http\ngx_http_script.c" />
+    <ClCompile Include="..\src\http\ngx_http_special_response.c" />
+    <ClCompile Include="..\src\http\ngx_http_upstream.c" />
+    <ClCompile Include="..\src\http\ngx_http_upstream_round_robin.c" />
+    <ClCompile Include="..\src\http\ngx_http_variables.c" />
+    <ClCompile Include="..\src\http\ngx_http_write_filter_module.c" />
+    <ClCompile Include="..\src\os\win32\ngx_alloc.c" />
+    <ClCompile Include="..\src\os\win32\ngx_errno.c" />
+    <ClCompile Include="..\src\os\win32\ngx_event_log.c" />
+    <ClCompile Include="..\src\os\win32\ngx_files.c" />
+    <ClCompile Include="..\src\os\win32\ngx_process.c" />
+    <ClCompile Include="..\src\os\win32\ngx_process_cycle.c" />
+    <ClCompile Include="..\src\os\win32\ngx_shmem.c" />
+    <ClCompile Include="..\src\os\win32\ngx_socket.c" />
+    <ClCompile Include="..\src\os\win32\ngx_stat.c" />
+    <ClCompile Include="..\src\os\win32\ngx_thread.c" />
+    <ClCompile Include="..\src\os\win32\ngx_time.c" />
+    <ClCompile Include="..\src\os\win32\ngx_udp_wsarecv.c" />
+    <ClCompile Include="..\src\os\win32\ngx_user.c" />
+    <ClCompile Include="..\src\os\win32\ngx_win32_init.c" />
+    <ClCompile Include="..\src\os\win32\ngx_wsarecv.c" />
+    <ClCompile Include="..\src\os\win32\ngx_wsarecv_chain.c" />
+    <ClCompile Include="..\src\os\win32\ngx_wsasend.c" />
+    <ClCompile Include="..\src\os\win32\ngx_wsasend_chain.c" />
+    <ClCompile Include="generate\ngx_modules.c" />
+    <ClCompile Include="generate\ngx_pch.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\core\nginx.h" />
+    <ClInclude Include="..\src\core\ngx_array.h" />
+    <ClInclude Include="..\src\core\ngx_buf.h" />
+    <ClInclude Include="..\src\core\ngx_config.h" />
+    <ClInclude Include="..\src\core\ngx_conf_file.h" />
+    <ClInclude Include="..\src\core\ngx_connection.h" />
+    <ClInclude Include="..\src\core\ngx_core.h" />
+    <ClInclude Include="..\src\core\ngx_crc.h" />
+    <ClInclude Include="..\src\core\ngx_crc32.h" />
+    <ClInclude Include="..\src\core\ngx_crypt.h" />
+    <ClInclude Include="..\src\core\ngx_cycle.h" />
+    <ClInclude Include="..\src\core\ngx_file.h" />
+    <ClInclude Include="..\src\core\ngx_hash.h" />
+    <ClInclude Include="..\src\core\ngx_inet.h" />
+    <ClInclude Include="..\src\core\ngx_list.h" />
+    <ClInclude Include="..\src\core\ngx_log.h" />
+    <ClInclude Include="..\src\core\ngx_md5.h" />
+    <ClInclude Include="..\src\core\ngx_murmurhash.h" />
+    <ClInclude Include="..\src\core\ngx_open_file_cache.h" />
+    <ClInclude Include="..\src\core\ngx_palloc.h" />
+    <ClInclude Include="..\src\core\ngx_parse.h" />
+    <ClInclude Include="..\src\core\ngx_proxy_protocol.h" />
+    <ClInclude Include="..\src\core\ngx_queue.h" />
+    <ClInclude Include="..\src\core\ngx_radix_tree.h" />
+    <ClInclude Include="..\src\core\ngx_rbtree.h" />
+    <ClInclude Include="..\src\core\ngx_regex.h" />
+    <ClInclude Include="..\src\core\ngx_resolver.h" />
+    <ClInclude Include="..\src\core\ngx_sha1.h" />
+    <ClInclude Include="..\src\core\ngx_shmtx.h" />
+    <ClInclude Include="..\src\core\ngx_slab.h" />
+    <ClInclude Include="..\src\core\ngx_string.h" />
+    <ClInclude Include="..\src\core\ngx_times.h" />
+    <ClInclude Include="..\src\event\modules\ngx_iocp_module.h" />
+    <ClInclude Include="..\src\event\ngx_event.h" />
+    <ClInclude Include="..\src\event\ngx_event_busy_lock.h" />
+    <ClInclude Include="..\src\event\ngx_event_connect.h" />
+    <ClInclude Include="..\src\event\ngx_event_openssl.h" />
+    <ClInclude Include="..\src\event\ngx_event_pipe.h" />
+    <ClInclude Include="..\src\event\ngx_event_posted.h" />
+    <ClInclude Include="..\src\event\ngx_event_timer.h" />
+    <ClInclude Include="..\src\http\modules\ngx_http_ssi_filter_module.h" />
+    <ClInclude Include="..\src\http\modules\ngx_http_ssl_module.h" />
+    <ClInclude Include="..\src\http\ngx_http.h" />
+    <ClInclude Include="..\src\http\ngx_http_busy_lock.h" />
+    <ClInclude Include="..\src\http\ngx_http_cache.h" />
+    <ClInclude Include="..\src\http\ngx_http_config.h" />
+    <ClInclude Include="..\src\http\ngx_http_core_module.h" />
+    <ClInclude Include="..\src\http\ngx_http_request.h" />
+    <ClInclude Include="..\src\http\ngx_http_script.h" />
+    <ClInclude Include="..\src\http\ngx_http_spdy.h" />
+    <ClInclude Include="..\src\http\ngx_http_spdy_module.h" />
+    <ClInclude Include="..\src\http\ngx_http_upstream.h" />
+    <ClInclude Include="..\src\http\ngx_http_upstream_round_robin.h" />
+    <ClInclude Include="..\src\http\ngx_http_variables.h" />
+    <ClInclude Include="..\src\mail\ngx_mail.h" />
+    <ClInclude Include="..\src\mail\ngx_mail_imap_module.h" />
+    <ClInclude Include="..\src\mail\ngx_mail_pop3_module.h" />
+    <ClInclude Include="..\src\mail\ngx_mail_smtp_module.h" />
+    <ClInclude Include="..\src\mail\ngx_mail_ssl_module.h" />
+    <ClInclude Include="..\src\os\win32\ngx_alloc.h" />
+    <ClInclude Include="..\src\os\win32\ngx_atomic.h" />
+    <ClInclude Include="..\src\os\win32\ngx_errno.h" />
+    <ClInclude Include="..\src\os\win32\ngx_files.h" />
+    <ClInclude Include="..\src\os\win32\ngx_os.h" />
+    <ClInclude Include="..\src\os\win32\ngx_process.h" />
+    <ClInclude Include="..\src\os\win32\ngx_process_cycle.h" />
+    <ClInclude Include="..\src\os\win32\ngx_shmem.h" />
+    <ClInclude Include="..\src\os\win32\ngx_socket.h" />
+    <ClInclude Include="..\src\os\win32\ngx_thread.h" />
+    <ClInclude Include="..\src\os\win32\ngx_time.h" />
+    <ClInclude Include="..\src\os\win32\ngx_user.h" />
+    <ClInclude Include="..\src\os\win32\ngx_win32_config.h" />
+    <ClInclude Include="generate\ngx_auto_config.h" />
+    <ClInclude Include="generate\ngx_auto_headers.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DF33B527-DE8B-401A-8EE4-0C9C12D4F9A0}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>nginx160</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)/src/core;$(SolutionDir)/win/generate;$(SolutionDir)/src/os/win32;$(SolutionDir)/src/event;$(SolutionDir)/src/event/modules;$(SolutionDir)/src/http;$(SolutionDir)/src/http/modules;$(SolutionDir)/src/mail;</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsC</CompileAs>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ws2_32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
